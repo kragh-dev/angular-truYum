@@ -1,0 +1,8 @@
+<p>ID: {{id}}</p>
+<p>Name: {{name}}</p>
+<p>Price: {{price | currency:'INR'}}</p>
+<p>Free Delivery: {{freeDelivery?'Yes':'No'}}</p>
+<p>Category: {{category}}</p>
+<p>Active: {{active?'Yes':'No'}}</p>
+<p>Date Of Launch: {{dateOfLaunch | date:'mediumDate'}}</p>
+<p><img [src]="imageUrl" alt="image not available"></p>

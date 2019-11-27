@@ -1,0 +1,16 @@
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12" *ngFor='let foodItem of foodItemList'>
+         <div class="card">
+            <p>ID: {{foodItem.id}}</p>
+            <p>Name: {{foodItem.name}}</p>
+            <p>Price: {{foodItem.price | currency:'INR'}}</p>
+            <p>Free Delivery: {{foodItem.freeDelivery?'Yes':'No'}}</p>
+            <p>Category: {{foodItem.category}}</p>
+            <p>Active: {{foodItem.active?'Yes':'No'}}</p>
+            <p>Date Of Launch: {{foodItem.dateOfLaunch | date:'mediumDate'}}</p>
+            <p><img [src]="foodItem.imageUrl" alt="image not available"></p>
+         </div>
+      </div>
+   </div>
+</div>
